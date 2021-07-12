@@ -2,10 +2,12 @@
 <html5>
     <head>
         <meta charset="UTF-8">
+       
         <title>circle with text</title>
       
       </head>
 <style>
+   
    
    .dot {
     text-align: right;
@@ -114,6 +116,7 @@
     }
     body {
         background-color: #fff;
+        border-width: thin;
         }
       #circle {
         position:fixed;
@@ -126,6 +129,7 @@
         border-radius: 20px;
         text-align:center;
         vertical-align: top;
+        border-width: thin;
         }
         #circle1 {
         position:fixed;
@@ -155,6 +159,7 @@
           font-family:  sans-serif;
           font-weight: 10;
           font-size: 13px;
+          border-width: thin;
         }                 
         h2 { 
           position: absolute; 
@@ -172,59 +177,83 @@
         justify-content:center;
         margin-top: 3.5%; 
         margin-left: 40%;
+        border-width: thin;
         }
         h5 {
         position: absolute;
         top: 25%;
-        bottom: 60%;
-        right: 30%;
         left: 30%;
+        height: 6%;
+        width: 40%;
         border-bottom-style: solid;
         border-top-right-radius: 20px;
         border-top-style: solid;
         border-bottom-right-radius: 20px;
         border-right: solid;
-        border-bottom-width: 1px;
-        border-top-width: 1px;
-        border-right-width: 1px ;
+        border-width:thin;
         border-color: rgb(155, 155, 142); 
-        }       
+        }  
+        .h5text {
+          position: absolute;
+          top: 30%;
+          left:30.5%;
+          text-align:left;
+         
+        }     
        
         h6 {
         position: absolute;
-        top: 24.5%;
-        bottom: 59.6%;
-        right: 70%;
-        left:28%; 
+        top: 24.5%; 
+        left: 28.3%; 
+        width: 5;  
+        height:6;
         border-bottom-style: solid;
         border-top-left-radius: 20px;
         border-top-style: solid;
         border-bottom-left-radius: 20px;
         border-left: solid;
         border-right: solid;
-        border-bottom-width: 1px;
-        border-top-width: 1px;
-        border-left-width: 1px ; 
-        border-right-width: 1px ; 
+        border-width:thin;
         border-color: rgb(155, 155, 142); 
         }
         .box1
         {
         position: absolute;
-        top: 70px;
-        left: 20px;
-         width: 80px;
-       height: 30px;
-        border-bottom-style: solid;
-        border-top-style: solid;
-        border-right: solid;
-        border-left: solid;
-        border-bottom-width: 1px;
-        border-top-width: 1px;
-        border-right-width: 1px ;
-        border-color: rgb(155, 155, 142);
-        border: solid;
-        } 
+        top: 40.5%;
+        left: 39%;
+        width: 12%;
+        height: 5%;
+        border-radius: 3px;
+        color: rgb(155, 155, 142);
+        border:solid;
+        border-width: thin; 
+        }
+        .box1text {
+          position: absolute;
+          top: 42%;
+          left:40%;
+          text-align:left;
+          font-size: 14px;
+        }     
+        .box2
+        {
+        position: absolute;
+        top: 40.5%;
+        left: 50%;
+        width: 12%;
+        height: 5%;
+        border-radius: 3px;
+        color: rgb(155, 155, 142);
+        border:solid;
+        border-width: thin; 
+        }
+        .box2text {
+          position: absolute;
+          top: 42%;
+          left: 51%;
+          text-align:left;
+          font-size: 14px;
+        }     
         
         footer {
           position: absolute;
@@ -244,7 +273,7 @@
           margin-bottom: 0.1%;
           border-width: thin; 
           border-bottom: solid;
-          border-bottom-width: 1px;
+          border-bottom-width: thin;
           height: 0.1%;
           }
         .footer1 {
@@ -267,7 +296,7 @@
           .footer3 {
           position: absolute;
           top:96%;
-          left:20%;
+          left:18%;
           color:rgb(151, 146, 146);
           text-align: left;
            font-size: 14px;
@@ -282,7 +311,31 @@
           text-align: left;
           font-size: 14px;  
           }
-       
+        
+          .footer5 {
+          position: absolute;
+          top:96%;
+          left: 78%;
+          color:rgb(151, 146, 146);
+          text-align: left;
+          font-size: 14px;  
+          }
+          .footer6 {
+          position: absolute;
+          top:96%;
+          left: 84%;
+          color:rgb(151, 146, 146);
+          text-align: left;
+          font-size: 14px;  
+          }
+          .footer7 {
+          position: absolute;
+          top:96%;
+          left: 91%;
+          color:rgb(151, 146, 146);
+          text-align: left;
+          font-size: 14px;  
+          }
  </style>
      
       <h1 style="text-decoration:none" onmouseover="style='text-decoration:underline' 
@@ -315,29 +368,39 @@
       </div> 
        </h4> 
        
-       <h5 style="text-indent: 15px" >alonso
-            </h5>
+       <h5> </h5>
+       <div class="h5text">alonso
+       </div>
        <h6>
         <div>
           <svg style="margin-top:48%" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" 
           fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 
           16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 
           4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 
-          7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-         
-        </div>  
-        <span class="box1"></span>
-
-        </div>      
+          7.01 14 9.5 11.99 14 9.5 14z"/></svg>          
         </h6>
-              
+      <div class="box1" style="border:none" onmouseover="style='border:solid'
+      " onmouseover="style='border-width:thin'"onmouseout="style='border:none'"></div>  
+       <div class="box2" style="border:none" onmouseover="style='border:solid'
+       " onmouseover="style='border-width:thin'"onmouseout="style='border:none'"></div> 
+      <div class="box1text">  Buscar con Google</div>
+      <div class="box2text"> Me Siento con Suerte</div>
               </body>
               <footer>Venezuela</footer>
               <div class="linea"></div>
-              <div class="footer1">Sobre google</div>
-      <div class="footer2">Publicidad </div>
-      <div class="footer3">Negocios </div>
-      <div class="footer4">Como funciona la Busqueda </div>
-
+              <div class="footer1"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+              " onmouseout="style='text-decoration:none'">Sobre google</div>
+      <div class="footer2"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+      " onmouseout="style='text-decoration:none'">Publicidad </div>
+      <div class="footer3"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+      " onmouseout="style='text-decoration:none'">Negocios </div>
+      <div class="footer4"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+      " onmouseout="style='text-decoration:none'">Como funciona la Busqueda </div>
+      <div class="footer5"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+      " onmouseout="style='text-decoration:none'">Privacidad </div>
+      <div class="footer6"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+      " onmouseout="style='text-decoration:none'">Condiciones </div>
+      <div class="footer7"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+      " onmouseout="style='text-decoration:none'">Preferencias </div>
       
       </html>
