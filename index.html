@@ -1,350 +1,404 @@
 <!DOCTYPE html>
 <html5>
+
     <head>
         <meta charset="UTF-8">
-       
-        <title>circle with text</title>
-      
-      </head>
-<style>
-   
-   
-   .dot {
-    text-align: right;
-    height: 0.24em;
-    width: 0.24em;
-    background-color: rgb(12, 11, 11);
-    position: absolute;
-    top: 22px; 
-    right: 74px;
-    border-radius: 50%;
-    clip-path: circle();
-    display: inline-block;
-    }
-    .dot1 {
-     text-align: right;
-    height: 0.24em;
-    width: 0.24em;
-    background-color: rgb(12, 11, 11);
-    position: absolute;
-    top: 22px;
-    right: 80px;
-    border-radius: 50%;
-    clip-path: circle();
-    display: inline-block flex;
-    }
-    .dot2 {
-     text-align: right;
-    height: 0.24em;
-    width: 0.24em;
-    background-color: rgb(12, 11, 11);
-    border-radius: 50%;
-    clip-path: circle();
-    position: absolute;
-    top: 22px;
-    right: 86px;
-    display: inline-block;}
 
-    .dot4 {
-    height: 0.24em;
-    width: 0.24em;
-    background-color: rgb(12, 11, 11);
-    border-radius: 50%;
-    clip-path: circle();
-    position: absolute;
-    top: 28px;
-    text-align: right;
-    right: 74px;
-    display: inline-block;}
-    .dot5 {
-    text-align: right;
-    height: 0.24em;
-    width: 0.24em;
-    background-color: rgb(12, 11, 11);
-    border-radius: 50%;
-    clip-path: circle();
-    position: absolute;
-    top: 28px;
-    right: 80px;
-    display: inline-block;}
-    .dot6 {
-    text-align: right;
-    height: 0.24em;
-    width: 0.24em;
-    background-color: rgb(12, 11, 11);
-    border-radius: 50%;
-    clip-path: circle();
-    position: absolute;
-    top: 28px;
-    right: 86px;
-    display: inline-block;}
-    .dot7 {
-    text-align: right;
-    height: 0.24em;
-    width: 0.24em;
-    background-color: rgb(12, 11, 11);
-    border-radius: 50%;
-    clip-path: circle();
-    position: absolute;
-    top: 34px;
-    right: 74px;
-    display: inline-block;
-    }
-    .dot8 {
-    text-align: right;
-    height: 0.24em;
-    width:0.24em;
-    background-color: rgb(12, 11, 11);
-    border-radius: 50%;
-    clip-path: circle();
-    position: absolute;
-    top: 34px;
-    right: 80px;
-    display: inline-block;
-    }
-    .dot9 {
-    text-align: right;
-    height: 0.24em;
-    width: 0.24em;
-    background-color: rgb(12, 11, 11);
-    border-radius: 50%;
-    clip-path: circle();
-    position: absolute;
-    top: 34px;
-    right: 86px;
-    display: inline-block;
-    }
-    body {
-        background-color: #fff;
-        border-width: thin;
+        <title>circle with text</title>
+
+    </head>
+    <style>
+        .dot {
+            text-align: right;
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            position: absolute;
+            top: 22px;
+            right: 74px;
+            border-radius: 50%;
+            clip-path: circle();
+            display: inline-block;
         }
-      #circle {
-        position:fixed;
-        right:1.15%;
-        top:2.15%;
-        background-color: #09f;
-        margin: 0px auto;
-        width: 32px;
-        height: 32px;
-        border-radius: 20px;
-        text-align:center;
-        vertical-align: top;
-        border-width: thin;
+        
+        .dot1 {
+            text-align: right;
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            position: absolute;
+            top: 22px;
+            right: 80px;
+            border-radius: 50%;
+            clip-path: circle();
+            display: inline-block flex;
         }
+        
+        .dot2 {
+            text-align: right;
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            border-radius: 50%;
+            clip-path: circle();
+            position: absolute;
+            top: 22px;
+            right: 86px;
+            display: inline-block;
+        }
+        
+        .dot4 {
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            border-radius: 50%;
+            clip-path: circle();
+            position: absolute;
+            top: 28px;
+            text-align: right;
+            right: 74px;
+            display: inline-block;
+        }
+        
+        .dot5 {
+            text-align: right;
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            border-radius: 50%;
+            clip-path: circle();
+            position: absolute;
+            top: 28px;
+            right: 80px;
+            display: inline-block;
+        }
+        
+        .dot6 {
+            text-align: right;
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            border-radius: 50%;
+            clip-path: circle();
+            position: absolute;
+            top: 28px;
+            right: 86px;
+            display: inline-block;
+        }
+        
+        .dot7 {
+            text-align: right;
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            border-radius: 50%;
+            clip-path: circle();
+            position: absolute;
+            top: 34px;
+            right: 74px;
+            display: inline-block;
+        }
+        
+        .dot8 {
+            text-align: right;
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            border-radius: 50%;
+            clip-path: circle();
+            position: absolute;
+            top: 34px;
+            right: 80px;
+            display: inline-block;
+        }
+        
+        .dot9 {
+            text-align: right;
+            height: 0.24em;
+            width: 0.24em;
+            background-color: rgb(12, 11, 11);
+            border-radius: 50%;
+            clip-path: circle();
+            position: absolute;
+            top: 34px;
+            right: 86px;
+            display: inline-block;
+        }
+        
+        body {
+            background-color: #fff;
+            border-width: thin;
+        }
+        
+        #circle {
+            position: fixed;
+            right: 1.15%;
+            top: 2.15%;
+            background-color: #09f;
+            margin: 0px auto;
+            width: 32px;
+            height: 32px;
+            border-radius: 20px;
+            text-align: center;
+            vertical-align: top;
+            border-width: thin;
+        }
+        
         #circle1 {
-        position:fixed;
-        right:4.5%;
-        top:2.15%;
-        background-color: rgb(239, 243, 247);
-        margin: 0px auto;
-        width: 32px;
-        height: 32px;
-        border-radius: 20px;
-        text-align:center;
-        vertical-align: top;
+            position: fixed;
+            right: 4.5%;
+            top: 2.15%;
+            background-color: rgb(239, 243, 247);
+            margin: 0px auto;
+            width: 32px;
+            height: 32px;
+            border-radius: 20px;
+            text-align: center;
+            vertical-align: top;
         }
-         #text{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
+        
+        #text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
         }
-        h1{ 
-          position: absolute; 
-          right: -71.5%;
-          margin-right: 80%;
-          margin-top: 0.4%; 
-          text-align: right;
-          font-family:  sans-serif;
-          font-weight: 10;
-          font-size: 13px;
-          border-width: thin;
-        }                 
-        h2 { 
-          position: absolute; 
-          right: -67%;
-          margin-right: 80.5%;
-          margin-top: 0.4%; 
-          text-align: right;
-          font-family:  sans-serif;
-          font-weight: 10;
-          font-size: 13px;        
+        
+        h1 {
+            position: absolute;
+            right: -71.5%;
+            margin-right: 80%;
+            margin-top: 0.4%;
+            text-align: right;
+            font-family: sans-serif;
+            font-weight: 10;
+            font-size: 13px;
+            border-width: thin;
         }
+        
+        h2 {
+            position: absolute;
+            right: -67%;
+            margin-right: 80.5%;
+            margin-top: 0.4%;
+            text-align: right;
+            font-family: sans-serif;
+            font-weight: 10;
+            font-size: 13px;
+        }
+        
         h4 {
-        position: fixed;
-        align-items:center;
-        justify-content:center;
-        margin-top: 3.5%; 
-        margin-left: 40%;
-        border-width: thin;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3.5%;
+            margin-left: 40%;
+            border-width: thin;
         }
+        
         h5 {
-        position: absolute;
-        top: 25%;
-        left: 30%;
-        height: 6%;
-        width: 40%;
-        border-bottom-style: solid;
-        border-top-right-radius: 20px;
-        border-top-style: solid;
-        border-bottom-right-radius: 20px;
-        border-right: solid;
-        border-width:thin;
-        border-color: rgb(155, 155, 142); 
-        }  
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            height: 6%;
+            width: 40%;
+            border-bottom-style: solid;
+            border-top-right-radius: 20px;
+            border-top-style: solid;
+            border-bottom-right-radius: 20px;
+            border-right: solid;
+            border-width: thin;
+            border-color: rgb(155, 155, 142);
+        }
+        
         .h5text {
-          position: absolute;
-          top: 30%;
-          left:30.5%;
-          text-align:left;
-         
-        }     
-       
+            position: absolute;
+            top: 30%;
+            left: 30.5%;
+            text-align: left;
+        }
+        
         h6 {
-        position: absolute;
-        top: 24.5%; 
-        left: 28.3%; 
-        width: 5;  
-        height:6;
-        border-bottom-style: solid;
-        border-top-left-radius: 20px;
-        border-top-style: solid;
-        border-bottom-left-radius: 20px;
-        border-left: solid;
-        border-right: solid;
-        border-width:thin;
-        border-color: rgb(155, 155, 142); 
+            position: absolute;
+            top: 24.5%;
+            left: 28.3%;
+            width: 5;
+            height: 6;
+            border-bottom-style: solid;
+            border-top-left-radius: 20px;
+            border-top-style: solid;
+            border-bottom-left-radius: 20px;
+            border-left: solid;
+            border-right: solid;
+            border-width: thin;
+            border-color: rgb(155, 155, 142);
         }
-        .box1
-        {
-        position: absolute;
-        top: 40.5%;
-        left: 39%;
-        width: 12%;
-        height: 5%;
-        border-radius: 3px;
-        color: rgb(155, 155, 142);
-        border:solid;
-        border-width: thin; 
+        
+        .box1 {
+            position: absolute;
+            top: 40.5%;
+            left: 39%;
+            width: 11%;
+            height: 5%;
+            border-radius: 3px;
+            color: rgb(155, 155, 142);
+            border: solid;
+            border-width: thin;
         }
+        
         .box1text {
-          position: absolute;
-          top: 42%;
-          left:40%;
-          text-align:left;
-          font-size: 14px;
-        }     
-        .box2
-        {
-        position: absolute;
-        top: 40.5%;
-        left: 50%;
-        width: 12%;
-        height: 5%;
-        border-radius: 3px;
-        color: rgb(155, 155, 142);
-        border:solid;
-        border-width: thin; 
+            position: absolute;
+            top: 42%;
+            left: 40%;
+            text-align: left;
+            font-size: 14px;
         }
+        
+        .box2 {
+            position: absolute;
+            top: 40.5%;
+            left: 50%;
+            width: 12%;
+            height: 5%;
+            border-radius: 3px;
+            color: rgb(155, 155, 142);
+            border: solid;
+            border-width: thin;
+        }
+        
         .box2text {
-          position: absolute;
-          top: 42%;
-          left: 51%;
-          text-align:left;
-          font-size: 14px;
-        }     
+            position: absolute;
+            top: 42%;
+            left: 51%;
+            text-align: left;
+            font-size: 14px;
+        }
         
         footer {
-          position: absolute;
-          top:88%;
-          left:1.5%;
-          color:rgb(151, 146, 146);
-          text-decoration-color:rgb(233, 230, 230);
+            position: absolute;
+            top: 88%;
+            left: 1.5%;
+            color: rgb(151, 146, 146);
+            text-decoration-color: rgb(233, 230, 230);
         }
-        .linea {
-          position: absolute;
-          top:93%;
-          width: 100%;  
-           
-          color:rgb(151, 146, 146); 
-          margin-right: auto;  
-          margin-left: auto;  
-          margin-bottom: 0.1%;
-          border-width: thin; 
-          border-bottom: solid;
-          border-bottom-width: thin;
-          height: 0.1%;
-          }
-        .footer1 {
-          position: absolute;
-          top:96%;
-          left:1%;
-          color:rgb(151, 146, 146);
-          text-align: left;
-          font-size: 14px;
-          }
-          .footer2 {
-          position: absolute;
-          top:96%;
-          left:10%;
-          color:rgb(151, 146, 146);
-          text-align: left;
-          font-size: 14px;
-          }
-          
-          .footer3 {
-          position: absolute;
-          top:96%;
-          left:18%;
-          color:rgb(151, 146, 146);
-          text-align: left;
-           font-size: 14px;
-           
-
-          }
-          .footer4 {
-          position: absolute;
-          top:96%;
-          left:25%;
-          color:rgb(151, 146, 146);
-          text-align: left;
-          font-size: 14px;  
-          }
         
-          .footer5 {
-          position: absolute;
-          top:96%;
-          left: 78%;
-          color:rgb(151, 146, 146);
-          text-align: left;
-          font-size: 14px;  
-          }
-          .footer6 {
-          position: absolute;
-          top:96%;
-          left: 84%;
-          color:rgb(151, 146, 146);
-          text-align: left;
-          font-size: 14px;  
-          }
-          .footer7 {
-          position: absolute;
-          top:96%;
-          left: 91%;
-          color:rgb(151, 146, 146);
-          text-align: left;
-          font-size: 14px;  
-          }
- </style>
-     
-      <h1 style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+        .linea {
+            position: absolute;
+            top: 93%;
+            width: 100%;
+            color: rgb(151, 146, 146);
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 0.1%;
+            border-width: thin;
+            border-bottom: solid;
+            border-bottom-width: thin;
+            height: 0.1%;
+        }
+        
+        .footer1 {
+            position: absolute;
+            top: 96%;
+            left: 1%;
+            color: rgb(151, 146, 146);
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .footer2 {
+            position: absolute;
+            top: 96%;
+            left: 10%;
+            color: rgb(151, 146, 146);
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .footer3 {
+            position: absolute;
+            top: 96%;
+            left: 18%;
+            color: rgb(151, 146, 146);
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .footer4 {
+            position: absolute;
+            top: 96%;
+            left: 25%;
+            color: rgb(151, 146, 146);
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .footer5 {
+            position: absolute;
+            top: 96%;
+            left: 78%;
+            color: rgb(151, 146, 146);
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .footer6 {
+            position: absolute;
+            top: 96%;
+            left: 84%;
+            color: rgb(151, 146, 146);
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .footer7 {
+            position: absolute;
+            top: 96%;
+            left: 91%;
+            color: rgb(151, 146, 146);
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        .popBox {
+            position: absolute;
+            top: 5%;
+            right: 20%;
+            background: #080808;
+            width: 90px;
+            padding: 0.3em;
+            border: 1px solid rgb(14, 13, 13);
+            color: rgb(236, 228, 228);
+            font-size: 14px;
+        }
+    </style>
+
+    </script>
+    <script type="text/javascript">
+        function showBox(text, obj) {
+            helpNode = document.createElement('div');
+            helpNode.id = 'popBox';
+            helpNode.setAttribute('class', 'popBox');
+            helpNode.innerHTML = text;
+            obj.appendChild(helpNode);
+        }
+
+        function hideBox() {
+            node = document.getElementById('popBox');
+            node.parentNode.removeChild(node);
+        }
+    </script>
+    <h1 style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'"> Imagenes</h1>
-      <h2 style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+    <h2 style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'">Gmail</h2>
-      <div id="circle1"></div>
-      <h3> 
-        <div id="circle1"></div>  
+
+    <h3>
+        <div onmouseover="showBox('<b>Google apps</b><br />' , this)" onmouseout="hideBox()">
+            <span> <div id="circle1"> </div></span></div>
+
+        </a>
+
         <span class="dot"></span>
         <span class="dot1"></span>
         <span class="dot2"></span>
@@ -354,53 +408,53 @@
         <span class="dot7"></span>
         <span class="dot8"></span>
         <span class="dot9"></span>
-        </h3>
-  
-        <body> 
+    </h3>
+
+    <body>
         <div id="circle">
-        <div id="text">a</div>    
-        </div> 
-      <h4>
-        <div>
-       <a href="https://www.google.com/images/branding/googlelogo/1x/">
-       <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-      </a>
-      </div> 
-       </h4> 
-       
-       <h5> </h5>
-       <div class="h5text">alonso
-       </div>
-       <h6>
-        <div>
-          <svg style="margin-top:48%" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" 
-          fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 
+
+            <div id="text" onmouseover="showBox('<b>alter8800</b><br />' , this)" onmouseout="hideBox()">a</div>
+        </div>
+        <h4>
+            <div>
+                <a href="https://www.google.com/images/branding/googlelogo/1x/">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </a>
+            </div>
+        </h4>
+
+        <h5> </h5>
+        <div class="h5text">alonso
+        </div>
+        <h6>
+            <div>
+                <svg style="margin-top:48%" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 
           16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 
           4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 
-          7.01 14 9.5 11.99 14 9.5 14z"/></svg>          
+          7.01 14 9.5 11.99 14 9.5 14z"/></svg>
         </h6>
-      <div class="box1" style="border:none" onmouseover="style='border:solid'
-      " onmouseover="style='border-width:thin'"onmouseout="style='border:none'"></div>  
-       <div class="box2" style="border:none" onmouseover="style='border:solid'
-       " onmouseover="style='border-width:thin'"onmouseout="style='border:none'"></div> 
-      <div class="box1text">  Buscar con Google</div>
-      <div class="box2text"> Me Siento con Suerte</div>
-              </body>
-              <footer>Venezuela</footer>
-              <div class="linea"></div>
-              <div class="footer1"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+        <div class="box1" style="border:none" onmouseover="style='border:solid'
+      " onmouseover="style='border-width:thin'" onmouseout="style='border:none'"></div>
+        <div class="box2" style="border:none" onmouseover="style='border:solid'
+       " onmouseover="style='border-width:thin'" onmouseout="style='border:none'"></div>
+        <div class="box1text"> Buscar con Google</div>
+        <div class="box2text"> Me Siento con Suerte</div>
+    </body>
+    <footer>Venezuela</footer>
+    <div class="linea"></div>
+    <div class="footer1" style="text-decoration:none" onmouseover="style='text-decoration:underline' 
               " onmouseout="style='text-decoration:none'">Sobre google</div>
-      <div class="footer2"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+    <div class="footer2" style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'">Publicidad </div>
-      <div class="footer3"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+    <div class="footer3" style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'">Negocios </div>
-      <div class="footer4"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+    <div class="footer4" style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'">Como funciona la Busqueda </div>
-      <div class="footer5"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+    <div class="footer5" style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'">Privacidad </div>
-      <div class="footer6"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+    <div class="footer6" style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'">Condiciones </div>
-      <div class="footer7"style="text-decoration:none" onmouseover="style='text-decoration:underline' 
+    <div class="footer7" style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'">Preferencias </div>
-      
-      </html>
+
+    </html>
