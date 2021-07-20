@@ -212,11 +212,14 @@
             border-color: rgb(155, 155, 142);
         }
         
-        .h5text {
+        input[type=text] {
             position: absolute;
-            top: 30%;
-            left: 30.5%;
+            top: 15%;
+            height: 30px;
+            left: 1.5%;
+            width: 550px;
             text-align: left;
+            border: none;
         }
         
         h6 {
@@ -237,14 +240,14 @@
         
         .box1 {
             position: absolute;
+            border-width: thin;
             top: 40.5%;
             left: 39%;
             width: 11%;
             height: 5%;
             border-radius: 3px;
             color: rgb(155, 155, 142);
-            border: solid;
-            border-width: thin;
+            border: solid thin;
         }
         
         .box1text {
@@ -363,9 +366,9 @@
         .popBox {
             position: absolute;
             top: 5%;
-            right: 20%;
+            right: 6%;
             background: #080808;
-            width: 90px;
+            width: 100px;
             padding: 0.3em;
             border: 1px solid rgb(14, 13, 13);
             color: rgb(236, 228, 228);
@@ -386,8 +389,17 @@
         function hideBox() {
             node = document.getElementById('popBox');
             node.parentNode.removeChild(node);
+
         }
     </script>
+    <script>
+        function submitform() {
+            document.forms["myform"].submit();
+            alert("Value is submitted");
+        }
+    </script>
+
+
     <h1 style="text-decoration:none" onmouseover="style='text-decoration:underline' 
       " onmouseout="style='text-decoration:none'"> Imagenes</h1>
     <h2 style="text-decoration:none" onmouseover="style='text-decoration:underline' 
@@ -423,15 +435,16 @@
             </div>
         </h4>
 
-        <h5> </h5>
-        <div class="h5text">alonso
-        </div>
+        <h5>
+            <form method="post" action="yourdata.php" id="myForm"></form>
+            <div class="h5text"> <br><input type="text" name="n"><br/> </div>
+        </h5>
+
         <h6>
-            <div>
-                <svg style="margin-top:48%" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 
+            <div onclick="submitform()"> <svg style="margin-top:48%" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 
           16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 
           4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 
-          7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          7.01 14 9.5 11.99 14 9.5 14z"/></svg></div>
         </h6>
         <div class="box1" style="border:none" onmouseover="style='border:solid'
       " onmouseover="style='border-width:thin'" onmouseout="style='border:none'"></div>
